@@ -1,4 +1,5 @@
 import React from 'react'
+import {Link} from 'react-router-dom';
 import "./MovieCard.css"
 import StarRatingComponent from 'react-star-rating-component';
 
@@ -7,6 +8,7 @@ import StarRatingComponent from 'react-star-rating-component';
 const MovieCard = ({movie}) => {
     return (
         <div>
+             <Link to={`/details/${movie.id}`}>
             <div className="wrapper">
                 <div className="main_card">
                     <div className="card_left">
